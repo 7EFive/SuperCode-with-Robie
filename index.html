@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Supercode</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body>
+<div class="layout" style="display:flex; align-items: center;">
+    <div id="game-board">
+        <h1>Supercode</h1>
+        <hr>
+        <div id="guesses">
+            <div class="guess-row" id="try-1" >
+                <div class="index-number">1</div>
+                <div class="guess-item" data-color=""></div>
+                <div class="guess-item" data-color=""></div>
+                <div class="guess-item" data-color=""></div>
+                <div class="guess-item" data-color=""></div>
+                <div class="guess-result">
+                    <div class="guess-result-item" data-color="white"></div>
+                    <div class="guess-result-item" data-color="white"></div>
+                    <div class="guess-result-item" data-color="white"></div>
+                    <div class="guess-result-item" data-color="white"></div>
+                </div>
+            </div>
+            <div class="guess-row" id="try-2">
+                <div class="index-number">2</div>
+                <div class="guess-item" data-color=""></div>
+                <div class="guess-item" data-color=""></div>
+                <div class="guess-item" data-color=""></div>
+                <div class="guess-item" data-color=""></div>
+                <div class="guess-result">
+                    <div class="guess-result-item" data-color="white"></div>
+                    <div class="guess-result-item" data-color="white"></div>
+                    <div class="guess-result-item" data-color="white"></div>
+                    <div class="guess-result-item" data-color="white"></div>
+                </div>
+            </div>
+            <div class="guess-row"  id="try-3">
+                <div class="index-number">3</div>
+                <div class="guess-item" data-color=""></div>
+                <div class="guess-item" data-color=""></div>
+                <div class="guess-item" data-color=""></div>
+                <div class="guess-item" data-color=""></div>
+                <div class="guess-result">
+                    <div class="guess-result-item" data-color="white"></div>
+                    <div class="guess-result-item" data-color="white"></div>
+                    <div class="guess-result-item" data-color="white"></div>
+                    <div class="guess-result-item" data-color="white"></div>
+                </div>
+            </div>
+            <div class="guess-row"  id="try-4">
+                <div class="index-number">4</div>
+                <div class="guess-item" data-color=""></div>
+                <div class="guess-item" data-color=""></div>
+                <div class="guess-item" data-color=""></div>
+                <div class="guess-item" data-color=""></div>
+                <div class="guess-result">
+                    <div class="guess-result-item" data-color="white"></div>
+                    <div class="guess-result-item" data-color="white"></div>
+                    <div class="guess-result-item" data-color="white"></div>
+                    <div class="guess-result-item" data-color="white"></div>
+                </div>
+            </div>
+            <div class="guess-row"  id="try-5">
+                <div class="index-number">5</div>
+                <div class="guess-item" data-color=""></div>
+                <div class="guess-item" data-color=""></div>
+                <div class="guess-item" data-color=""></div>
+                <div class="guess-item" data-color=""></div>
+                <div class="guess-result">
+                    <div class="guess-result-item" data-color="white"></div>
+                    <div class="guess-result-item" data-color="white"></div>
+                    <div class="guess-result-item" data-color="white"></div>
+                    <div class="guess-result-item" data-color="white"></div>
+                </div>
+            </div>
+            <div class="guess-row"  id="try-6">
+                <div class="index-number">6</div>
+                <div class="guess-item" data-color=""></div>
+                <div class="guess-item" data-color=""></div>
+                <div class="guess-item" data-color=""></div>
+                <div class="guess-item" data-color=""></div>
+                <div class="guess-result">
+                    <div class="guess-result-item" data-color="white"></div>
+                    <div class="guess-result-item" data-color="white"></div>
+                    <div class="guess-result-item" data-color="white"></div>
+                    <div class="guess-result-item" data-color="white"></div>
+                </div>
+            </div>
+            <div class="guess-row"  id="try-7">
+                <div class="index-number">7</div>
+                <div class="guess-item" data-color=""></div>
+                <div class="guess-item" data-color=""></div>
+                <div class="guess-item" data-color=""></div>
+                <div class="guess-item" data-color=""></div>
+                <div class="guess-result">
+                    <div class="guess-result-item" data-color="white"></div>
+                    <div class="guess-result-item" data-color="white"></div>
+                    <div class="guess-result-item" data-color="white"></div>
+                    <div class="guess-result-item" data-color="white"></div>
+                </div>
+            </div>
+            <div class="guess-row"  id="try-8">
+                <div class="index-number">8</div>
+                <div class="guess-item" data-color=""></div>
+                <div class="guess-item" data-color=""></div>
+                <div class="guess-item" data-color=""></div>
+                <div class="guess-item" data-color=""></div>
+                <div class="guess-result">
+                    <div class="guess-result-item" data-color="white"></div>
+                    <div class="guess-result-item" data-color="white"></div>
+                    <div class="guess-result-item" data-color="white"></div>
+                    <div class="guess-result-item" data-color="white"></div>
+                </div>
+            </div>
+            
+        </div>
+        <hr>
+        <h2 id="lower-content-text">Select your code here</h2>
+        <div id="code-input">
+            <div class="color-options">
+                <div class="color-select">
+                    <div class="color-display"></div>
+                    <div class="color-list" >
+                        <div class="color-option" data-color="empty"></div>
+                        <div class="color-option" data-color="red"></div>
+                        <div class="color-option" data-color="blue"></div>
+                        <div class="color-option" data-color="green"></div>
+                        <div class="color-option" data-color="yellow"></div>
+                        <div class="color-option" data-color="brown"></div>
+                    </div>
+                </div>
+                <div class="color-select">
+                    <div class="color-display"></div>
+                    <div class="color-list">
+                        <div class="color-option" data-color="empty"></div>
+                        <div class="color-option" data-color="red"></div>
+                        <div class="color-option" data-color="blue"></div>
+                        <div class="color-option" data-color="green"></div>
+                        <div class="color-option" data-color="yellow"></div>
+                        <div class="color-option" data-color="brown"></div>
+                    </div>
+                </div>
+                <div class="color-select">
+                    <div class="color-display"></div>
+                    <div class="color-list" >
+                        <div class="color-option "data-color="empty"></div>
+                        <div class="color-option" data-color="red"></div>
+                        <div class="color-option" data-color="blue"></div>
+                        <div class="color-option" data-color="green"></div>
+                        <div class="color-option" data-color="yellow"></div>
+                        <div class="color-option" data-color="brown"></div>
+                    </div>
+                </div>
+                <div class="color-select">
+                    <div class="color-display"></div>
+                    <div class="color-list">
+                        <div class="color-option" data-color="empty"></div>
+                        <div class="color-option" data-color="red"></div>
+                        <div class="color-option" data-color="blue"></div>
+                        <div class="color-option" data-color="green"></div>
+                        <div class="color-option" data-color="yellow"></div>
+                        <div class="color-option" data-color="brown"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="result hide" id="try-9">
+                <div class="guess-item" data-color=""></div>
+                <div class="guess-item" data-color=""></div>
+                <div class="guess-item" data-color=""></div>
+                <div class="guess-item" data-color=""></div>
+            </div>
+            <button id="submit-guess">Play against Robie</button>
+            <button id="submit-own-guess">Set up own Code</button>
+            <button id="reset">Reset attempt</button>
+        </div>
+    </div>
+    <div class="robie-panel" >
+        <div id="chat-bubble" style="display:sticky;">
+            <h3 id="chat-content">Hey there! I'm <b>Robie</b> and welcome to the Supercode! Play either against my code or let someone else create the <b>Supercode</b> that you have to guess.</h3>
+        </div>
+        <div class="robie">
+            <img id="robie_defult" src="img/helper1.svg">
+            <img id="robie_dis" src="img/helper2.svg">
+            <img id="robie_dis_last" src="img/helper2a.svg">
+            <img id="robie_hap" src="img/helper3.svg">
+            <img id="robie_hap_last" src="img/helper3a.svg">
+            <img id="robie_lucky" src="img/helper3b.svg">
+            <img id="robie_noNull" src="img/helperA.svg">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</div>
+</body>
+</html>

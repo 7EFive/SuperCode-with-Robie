@@ -1,0 +1,303 @@
+body {
+    background-color: #dbd9f4;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    margin-top: -75px;
+}
+#chat-bubble,
+#game-board {
+    background-color: #ffffff;
+    border-radius: 50px;
+    padding-top:5px;
+    padding: 20px;
+    text-align: center;
+    border:solid,5px;
+    border-color:  lavender;
+}
+#game-board {
+    margin-top:auto;
+    align-items: center;
+}
+
+#guesses {
+    margin-bottom:10px;
+    margin-right:15px;
+}
+hr {
+    border-color: lavender;
+}
+h1 {
+    font-size: 35px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: rgb(118, 116, 155);
+}
+h2 {
+    font-size: 15px;
+    color: rgb(118, 116, 155);
+}
+h3{
+    color: rgb(140, 140, 140);
+}
+
+.index-number {
+    color: rgb(204, 204, 214);
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 16px;
+}
+
+.guess-row, .result {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+
+.guess-item {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    background-color: rgb(116, 113, 128);
+}
+
+.guess-item[data-color="red"] {
+    background-color: red;
+}
+
+.guess-item[data-color="blue"] {
+    background-color: blue;
+}
+
+.guess-item[data-color="green"] {
+    background-color: green;
+}
+
+.guess-item[data-color="yellow"] {
+    background-color: yellow;
+}
+
+.guess-item[data-color="brown"] {
+    background-color: brown;
+}
+
+.guess-result {
+    justify-content: center;
+    margin-top: 3px;
+    margin-left: 8px;
+    margin-right: -7px;
+}
+
+.guess-result-item {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    margin-left: 2px;
+    margin-bottom: 2px;
+    background-color: rgb(116, 116, 130);
+}
+
+
+.guess-result-item[data-color="black"] {
+    background-color: black;
+    border:1pt solid;
+    border-color:lavender;
+}
+
+.guess-result-item[data-color="white"] {
+    background-color: white;
+    border:1pt solid;
+    border-color:lavender;
+}
+
+.guess-result-item[data-color="lavender"] {
+    background-color: lavender;
+    border:1pt solid;
+    border-color:lavender;
+}
+
+.color-options {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.color-select {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+}
+.color-display{
+    background-color:"lavender";
+    border-radius: 50%;
+    border-style:solid;
+    border-color:lavender;
+    border-width:5px;
+}
+
+.color-display,
+.color-option {
+    height: 25px;
+    width: 25px;
+    background-color: white;
+}
+.color-option[data-color="empty"] {
+    box-shadow: inset 0 0 3px rgb(165, 163, 206);
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    margin-right:-1px;
+}
+
+.color-option[data-color="red"] {
+    background-color: red;
+}
+
+.color-option[data-color="blue"] {
+    background-color: blue;
+}
+
+.color-option[data-color="green"] {
+    background-color: green;
+}
+
+.color-option[data-color="yellow"] {
+    background-color: yellow;
+}
+
+.color-option[data-color="brown"] {
+    background-color: brown;
+}
+
+.color-list {
+    display: none;
+    position: absolute;
+    border:solid,3px;
+    border-color:lavender;
+    background-color: white;
+    border-radius:10px;
+    padding:5px;
+}
+
+.color-list.show {
+    display: flex;
+    flex-direction: column;
+}
+.hide{
+    display:none
+}
+#robie_hap,
+#robie_dis,
+#robie_lucky{
+    margin-top:30px;
+}
+#submit-guess,
+#reset,
+#submit-own-guess{
+    border-radius: 10px;
+    padding:10px;
+    border-color:lavender;
+    background-color: #ffffff;
+    color:rgb(116, 116, 130);
+}
+
+#chat-bubble {
+    align-items: center;
+    margin-top:auto;
+    max-width:750px;
+    border:solid,5px;
+    border-color:  lavender;
+}
+.robie-panel {
+    flex: 0 1 clamp(140px, 18vw, 320px);
+    max-width: clamp(140px, 25vw, 1000px);
+    align-self: flex-end;
+    margin-left: clamp(0rem, 1vw, 1rem);
+}
+.layout {
+    display: flex;
+    align-items: flex-start;
+    gap: clamp(0.5rem, 5vw, 15rem);
+    margin-left:600px;
+}
+.robie img{
+    height:clamp(140px, 35vw, 500px);
+    margin-bottom:-5em;
+}
+@media (max-width: 1500px) {
+    .layout {
+        margin-left:clamp(0.5rem, 5vw, 15rem);
+        ovewrflow-y:hidden;
+    }
+    h1{
+        margin-bottom: 2px;
+    }
+    h3{
+        font-size: clamp(5px, 2.5vw, 15px);
+    }
+}
+@media (max-width: 800px) {
+    body{
+        height:auto;
+        border-radius:15px;
+    }
+    .layout {
+    gap: clamp(0.5rem, 2vw, 10rem);
+    width: 100%;
+    display: flex;
+    align-items: flex-end;   
+    }
+    h1{
+        font-size: clamp(10px, 20px, 20px);
+    }
+    h3{
+        font-size: clamp(2px, 2.5vw, 15px);
+    }
+    h2{
+        font-size:12px;
+    }
+    .index-number{
+        margin-right:15px;
+        font-size:15px;
+    }
+    .guess-item{
+        width:clamp(10px, 25px, 30px);
+        height: clamp(10px, 25px, 30px);
+        margin-left: clamp(2px, 5px, 10px);
+        margin-right:clamp(2px, 5px, 10px);
+    }
+    #game-board{
+        padding:clamp(2px, 5px, 10px);
+        margin-top:6em;
+        height: clamp(15em,46em,100em);
+    }
+    #game-board,
+    #chat-bubble{
+        border-radius:15px;
+    }
+    #chat-bubble{
+        padding:0.5em;
+    }
+    #submit-guess,
+    #submit-own-guess{
+        padding:clamp(2px, 5px, 10px);
+        font-size:clamp(5px, 10px, 15px);
+    }
+    .color-display{
+        width:(10px, 25px, 30px);
+        height: clamp(10px, 25px, 30px);
+    }
+    .color-select{
+        margin: clamp(2px, 5px, 10px);
+    }
+
+}
+
+
+
+
